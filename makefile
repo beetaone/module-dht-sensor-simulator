@@ -1,7 +1,11 @@
 SHELL := /bin/bash # to enable source command in run_app
 
-MODULE=weevenetwork/boilerplate
+MODULE=weevenetwork/data-simulator
 VERSION_NAME=v1.0.0
+
+install_dev:
+	python3 -m pip install -r requirements_dev.txt
+.phony: install_dev
 
 lint:
 	black src/
@@ -27,6 +31,14 @@ run_docker_compose:
 stop_docker_compose:
 	docker-compose -f docker/docker-compose.yml down
 .phony: stop_docker_compose
+
+run_test:
+	docker-compose -f test/docker-compose.test.yml up
+.phony: run_test
+
+stop_test:
+	docker-compose -f test/docker-compose.test.yml down
+.phony: stop_test
 
 push_latest:
 	docker image push ${MODULE}:${VERSION_NAME}
