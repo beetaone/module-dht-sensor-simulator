@@ -19,6 +19,7 @@ TEMP_STEP = 0.1
 HUMIDITY_TOP = 100
 HUMIDITY_BOTTOM = 0
 
+
 def module_main():
     """
     Implements module's main logic for inputting data.
@@ -33,8 +34,8 @@ def module_main():
             humidity_data = randint(HUMIDITY_BOTTOM, HUMIDITY_TOP)
             # input_data are data received by the module
             input_data = {
-                PARAMS['TEMP_LABEL']: temp_data,
-                PARAMS['HUMIDITY_LABEL']: humidity_data,
+                PARAMS["TEMP_LABEL"]: temp_data,
+                PARAMS["HUMIDITY_LABEL"]: humidity_data,
             }
 
             # ----------------------------------------------------------------
@@ -47,7 +48,7 @@ def module_main():
             else:
                 log.debug("Data sent sucessfully.")
 
-            sleep(PARAMS['SLEEP_INTERVAL'])
+            sleep(PARAMS["SLEEP_INTERVAL"])
 
     except Exception as e:
         log.error(f"Exception in the module business logic: {e}")
