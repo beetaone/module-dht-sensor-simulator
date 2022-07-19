@@ -1,6 +1,6 @@
 SHELL := /bin/bash # to enable source command in run_app
 
-MODULE=weevenetwork/data-simulator
+MODULE=weevenetwork/dht-sensor-simulator
 VERSION_NAME=v1.0.0
 
 install_dev:

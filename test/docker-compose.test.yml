@@ -1,14 +1,14 @@
 version: "3.0"
 networks:
   default:
-    name: data_simulator_network
+    name: dht_sensor_simulator_network
 services:
 
-  data_simulator:
+  dht_sensor_simulator:
     build:
       context: ../
       dockerfile: docker/Dockerfile
-    container_name: data_simulator_test_container
+    container_name: dht_sensor_simulator_test_container
     ports:
       - 80:80
     env_file:

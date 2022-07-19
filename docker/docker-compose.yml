@@ -1,11 +1,12 @@
 version: "3.0"
 services:
-  data-simulator:
+  dht_sensor_simulator:
     build:
       context: ../
       dockerfile: docker/Dockerfile
+    container_name: dht_sensor_simulator
     environment:
-      MODULE_NAME: "data-simulator"
+      MODULE_NAME: "dht-sensor-simulator"
       MODULE_TYPE: "Input"
       EGRESS_URLS: "https://testdockercompose.free.beeceptor.com"
     ports:
