@@ -33,11 +33,15 @@ envs:
     type: 'number'
     options: []
     dependencies: []
-ports:                                  # Array of ports that will be exposed by the module.
-mounts:
+ports: []
+envPorts: []
+mounts: []
+envMounts: []
+devices: []
+envDevices: []
 tags:                                   # Array of tags.
   - Python
-  - DHT sensor simulator
+  - DHT-sensor-simulator
   - Input
   - Data
   - ingress
