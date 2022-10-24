@@ -29,7 +29,7 @@ envs:
   - name: Data send interval
     key: SLEEP_INTERVAL
     description: Time interval (sec) between the messages.
-    value: 5
+    value: '5'
     type: 'number'
     options: []
     dependencies: []
