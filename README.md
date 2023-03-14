@@ -3,7 +3,7 @@
 |         |                                                                               |
 | ------- | ----------------------------------------------------------------------------- |
 | name    | DHT sensor simulator                                                          |
-| version | v1.0.0                                                                        |
+| version | v1.0.1                                                                        |
 | GitHub  | [dht-sensor-simulator](https://github.com/weeve-modules/dht-sensor-simulator) |
 | authors | Paul Gaiduk                                                                   |
 
