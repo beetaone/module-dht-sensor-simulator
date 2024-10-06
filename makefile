@@ -1,6 +1,6 @@
 SHELL := /bin/bash # to enable source command in run_app
 
-MODULE=weevenetwork/dht-sensor-simulator
+MODULE=beetaone/dht-sensor-simulator
 VERSION_NAME=v1.0.1
 
 install_dev:
@@ -55,4 +55,4 @@ run_listener:
 	-e LOG_HTTP_HEADERS=true \
 	--name listener \
 	jmalloc/echo-server
-.phony: run_listener
+.phony: run_listenerener

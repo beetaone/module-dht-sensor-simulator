@@ -4,7 +4,7 @@
 | ------- | ----------------------------------------------------------------------------- |
 | name    | DHT sensor simulator                                                          |
 | version | v1.0.1                                                                        |
-| GitHub  | [dht-sensor-simulator](https://github.com/weeve-modules/dht-sensor-simulator) |
+| GitHub  | [dht-sensor-simulator](https://github.com/beetaone/module-dht-sensor-simulator) |
 | authors | Paul Gaiduk                                                                   |
 
 ---
@@ -17,7 +17,7 @@
     -   [Features](#features)
     -   [Environment Variables](#environment-variables)
         -   [Module Specific](#module-specific)
-        -   [Set by the weeve Agent on the edge-node](#set-by-the-weeve-agent-on-the-edge-node)
+        -   [Set by the beetaone Agent on the edge-node](#set-by-the-beetaone-agent-on-the-edge-node)
     -   [Dependencies](#dependencies)
 
 ---
@@ -34,7 +34,7 @@ DHT sensor simulator module emits temperature (in °C) and humidity (in %) data 
 
 ### Module Specific
 
-The following module configurations can be provided in a data service designer section on weeve platform:
+The following module configurations can be provided in a data service designer section on beetaone platform:
 
 | Name               | Environment Variables | Type    | Description                               |
 | ------------------ | --------------------- | ------- | ----------------------------------------- |
@@ -42,9 +42,9 @@ The following module configurations can be provided in a data service designer s
 | Humidity label     | HUMIDITY_LABEL        | string  | Label for the humidity data.              |
 | Data send interval | SLEEP_INTERVAL        | integer | Time interval (sec) between the messages. |
 
-Other features required for establishing the inter-container communication between modules in a data service are set by weeve agent.
+Other features required for establishing the inter-container communication between modules in a data service are set by beetaone agent.
 
-### Set by the weeve Agent on the edge-node
+### Set by the beetaone Agent on the edge-node
 
 | Environment Variables | type   | Description                            |
 | --------------------- | ------ | -------------------------------------- |

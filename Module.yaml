@@ -7,10 +7,10 @@ categories:                             # Array of category that will be used to
   - 'Ingress'
 type: 'Input'      # Module type (Input, Processing, Output) that will be used to group the module in the UI.
 image:
-  name: 'weevenetwork/dht-sensor-simulator'     # Image name from the docker registry.
+  name: 'beetaone/dht-sensor-simulator'     # Image name from the docker registry.
   tag: 'v1.0.1'                               # Image tag from the docker registry.
-  homepage: 'https://hub.docker.com/r/weevenetwork/dht-sensor-simulator'      # Image homepage from the docker registry.
-repository: 'https://github.com/weeve-modules/dht-sensor-simulator'     # Repository URL to source code.
+  homepage: 'https://hub.docker.com/r/beetaone/dht-sensor-simulator'      # Image homepage from the docker registry.
+repository: 'https://github.com/beetaone/module-dht-sensor-simulator'     # Repository URL to source code.
 envs:
   - name: Temperature label
     key: TEMP_LABEL
@@ -46,4 +46,4 @@ tags:                                   # Array of tags.
   - Data
   - ingress
   - Random
-icon: 'https://icons-020-demo.s3.eu-central-1.amazonaws.com/mi_DHT_input.png'    # Icon URL that will be displayed in the UI.
+icon: 'https://icons-020-demo.s3.eu-central-1.amazonaws.com/mi_DHT_input.png'    # Icon URL that will be displayed in the UI.he UI.
